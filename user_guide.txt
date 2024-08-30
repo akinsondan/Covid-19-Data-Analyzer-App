@@ -1,0 +1,61 @@
+COVID-19 DATA ANALYZER
+Overview
+Graphical User Interface (GUI) which provides the user with options to present summary information on the dataset from individual column from the provided COVID-19 Data set after it has been processed and cleaned. Plots can be plotted by selecting individual columns and some data cleaning can also be done on the data set.
+
+1.	Getting Started
+Prerequisites
+Preferably opened with PyCharm, with the following packages installed into the PyCharm Python interpreter from PyCharm Terminal using pip;
+PyQt5: pip install PyQt5
+PyQt5 Tools: pip install pyqt5-tools
+Matplotlib: pip install matplotlib
+Numpy: pip install numpy
+Pandas: pip install pandas
+
+The project folder can be opened on the PyCharm containing the following files;
+•	main.py: main Python file where the app can be run from.
+•	app_framework.py: This Python file contains the app framework code (functionality of the app).
+•	cleaning.py: Contains the data cleaning code for cleaned_covid19_data.csv
+•	data_analyzer_gui2.ui: The graphical user interface design file.
+•	cleaned_covid19_data.csv: Cleaned data set.
+•	COVID-19_Cases_World.csv: Original data set.
+•	mplwidget.py: Python file for the Matplotlib library widget used in plotting.
+•	python_v_3.8.2.txt: Python version used.
+•	user_guide.txt: Contains detailed instructions and guides.
+
+
+2. User interface
+•	open: Loads the cleaned data into the application.
+•	--select--: Columns can be selected from the dropdown menu below.
+•	Chart Display Area: Where the charts will be displayed.
+•	rename column: Renames selected column with text entered in user input. 
+•	check empty value: Checks empty value in the data set.
+•	drop null rows: Drops rows with null values.
+•	mean: Calculates mean.
+•	median: Calculates median.
+•	min: Returns minimum value.
+•	max: Returns maximum value.
+•	data shape: Returns number of columns and rows in data set.
+•	columns: Returns the columns in data set as a list.
+•	drop column: Drops selected column.
+•	standard deviation: Calculates the standard deviation.
+•	histogram: Plots the most suitable plot for the selected column.
+•	pie chart: Plots a pie chart for the selected column.
+•	check punctuations: Checks if there are any punctuations in data set.
+•	clear output: Clears user output.
+•	drop duplicate rows: Drops duplicate rows.
+•	check duplicates: Checks for duplicate rows.
+•	user input: Right above the rename button, accepts input from user.
+•	user output: Display output to user.
+
+
+3. Usage
+
+The app is best used in full screen mode.
+Once the project folder is opened, the application can be run by running main.py file.
+•	The open button is clicked to load the file. The opened file name will appear and file opened printed to output.
+•	Preferred column is selected and actions can be performed on selected column from some button described above.
+•	If file is not opened, prints message to the output for file to be opened.
+•	If action can not be performed on selected column, message is printed to the output to select another column.
+•	Column can be renamed by inserting text (15 characters maximum) into the input above rename button and then click the rename button.
+•	Charts can be plotted be selecting the appropriate column and then click histogram or pie chart button.
+ 
